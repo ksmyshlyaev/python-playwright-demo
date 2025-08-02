@@ -20,6 +20,12 @@ black = "25.1.0"
 isort = "6.0.1"
 pre-commit = "4.2.0"
 
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_format = "%(levelname)s %(asctime)s%(msecs)03d %(name)s: %(message)s"
+log_date_format = "%d-%m-%Y %H:%M:%S:"
+
 [tool.black]
 line-length = 119
 
